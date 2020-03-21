@@ -16,7 +16,7 @@ jobs:
           node-version: 10
       - name: node version
         run: node -v
-      - run: ci
+      - run: npm ci
       - run: npm run test
 
   build:
