@@ -30,6 +30,8 @@ jobs:
     steps:
       - name: Checkout repos
         uses: actions/checkout@v2
+      - name: node.js version
+        run: node -v
       - name: Install dependencies
         run: yarn
       - name: Building instance
