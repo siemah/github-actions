@@ -3,10 +3,6 @@ name: Github Action CI
 on: 
   push:
     branches: [ master ]
-    tags:
-      - v1.*
-    branches-ignore:
-      - dev
     tags-ignore:
       - v0
 
