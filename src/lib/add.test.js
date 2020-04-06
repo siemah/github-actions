@@ -7,5 +7,9 @@ describe('Add function', () => {
     expect(typeof res).toEqual('number');
     expect(res).toBe(3);
   })
+
+  test('should return a concat string', () => {
+    expect(add(3, 'dd')).toBe('3dd')
+  })
   
 })
