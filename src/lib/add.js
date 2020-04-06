@@ -1,3 +1,3 @@
 module.exports = function add(q, w) {
-  return q + w;
+  return parseFloat(q) + parseFloat(w);
 }

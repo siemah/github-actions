@@ -9,7 +9,7 @@ describe('Add function', () => {
   })
 
   test('should return a concat string', () => {
-    expect(add(3, 'dd')).toBe('3dd')
+    expect(add(3, 'dd')).toEqual(NaN)
   })
   
 })
