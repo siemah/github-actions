@@ -1,10 +1,9 @@
 name: Github Action CI
 
 on: 
-  pull_request_review:
+  push:
     branches:
     - master
-    types: []
 
 jobs:
   testing:
