@@ -1,8 +1,6 @@
 name: Github Action CI
 
-on: 
-  push:
-    branches: [ master ]
+on: [pull_request]
 
 jobs:
   testing:
@@ -32,7 +30,7 @@ jobs:
     steps:
       - name: Checkout repos
         uses: actions/checkout@v2
-      - name: node.js version
+      - name: nodejs version {{ matrix.node-version }}
         run: node -v
       - name: Install dependencies
         run: yarn
